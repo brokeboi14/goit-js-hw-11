@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw-9</title>
+    <title>hw-11</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
-      <h1>Example page title</h1>
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-    <ul>
-      <li><a class="task-link" href="./1-timer.html">Task 1</a></li>
-      <li><a class="task-link" href="./2-snackbar.html">Task 2</a></li>
-    </ul>
+    <form id="search-form" class="search-form">
+      <input class="search-input" type="text" name="query" id="query" placeholder="Search images..." required>
+      <button class="search-btn" type="submit">Search</button>
+    </form>
+    <span class="loader visually-hidden" id="loader"></span>
+    <ul class="gallery" id="gallery"></ul>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
